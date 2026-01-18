@@ -1,0 +1,17 @@
+
+# System files
+Thumbs.db
+Desktop.ini
+
+# Project specific
+uploads/*.csv
+*.log
+.env
+
+# Editor directories
+.idea/
+.vscode/
+
+# Ignore artifacts directory if it was copied inside (it shouldn't be but good practice)
+artifact/
+brain/
