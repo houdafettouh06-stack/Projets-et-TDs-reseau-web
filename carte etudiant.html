@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carte Étudiant UEMF</title>
+  <style>
+    body {
+      background-color: white;
+      font-family: "Arial", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .carte {
+      width: 480px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      overflow: hidden;
+      border: 1px solid white;
+    }
+
+    .carte-header {
+      background: linear-gradient(to right, #002b6e, #005bb5);
+      color: white;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+    }
+
+    .carte-header .logo {
+      width: 80px;
+      margin-right: 15px;
+    }
+
+    .carte-header .texte-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .carte-header h1 {
+      font-size: 1.4em;
+      margin: 0;
+    }
+
+    .carte-header h2 {
+      font-size: 0.9em;
+      margin: 3px 2 0;
+      letter-spacing: 1px;
+      opacity: 0.9;
+    }
+
+    .carte-body {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 15px 20px;
+      flex-direction: row-reverse; /* photo à droite, infos à gauche */
+    }
+
+    .infos-etudiant {
+      flex: 1;
+    }
+
+    .infos-etudiant .etab {
+      font-weight: bold;
+      text-align: left;
+      font-size: 1.1em;
+      margin-bottom: 10px;
+    }
+
+    .info {
+      margin-bottom: 8px;
+      font-size: 0.95em;
+    }
+
+    .label {
+      color: blue;
+      font-weight: bold;
+    }
+
+    .valeur {
+      color: black;
+    }
+
+    .rib {
+      margin-top: 15px;
+      font-weight: bold;
+      color: black;
+      font-size: 0.95em;
+    }
+
+    .photo-etudiant {
+      width: 120px;
+      height: 150px;
+      object-fit: cover;
+      border-radius:10px;
+      margin-left: 30px;
+      border: 1px solid white;
+    }
+
+    .footer {
+      text-align: right;
+      font-size: 0.8em;
+      color: black;
+      margin-top: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="carte">
+    <div class="carte-header">
+      <img src="C:\Users\hp\Downloads\UEMF.png" alt="UEMF Logo" class="logo">
+      <div class="texte-header">
+        <h1>CARTE D'ÉTUDIANT</h1>
+        <h2>STUDENT ID</h2>
+      </div>
+    </div>
+
+    <div class="carte-body">
+      <div class="infos-etudiant">
+        <div class="etab">ÉCOLE D'INGÉNIERIE DIGITALE ET D'INTELLIGENCE ARTIFICIELLE</div>
+        <div class="info"><span class="label">Nom et Prénom :</span> <span class="valeur">HOUDA FETTOUH</span></div>
+        <div class="info"><span class="label">Matricule :</span> <span class="valeur">2300815</span></div>
+        <div class="info rib"><span class="label">RIB Personnel :</span> <span class="valeur">225270978100876549</span></div>
+      </div>
+      <img src="C:\Users\hp\Pictures\7c88f70d-e9eb-49ed-a205-4092f36ed27c.jpg" alt="Photo Étudiant" class="photo-etudiant">
+    </div>
+
+    <div class="footer">Université Euromed de Fès</div>
+  </div>
+
+</body>
+</html>
